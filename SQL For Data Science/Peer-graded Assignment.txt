@@ -192,46 +192,46 @@ i. Avon
 
 SQL code used to arrive at answer:
 
-SELECT stars, sum(review_count) review_count 
+SELECT stars, COUNT(review_count) review_count 
 from business
 Where city = 'Avon'
 Group By stars
 
 Copy and Paste the Resulting Table Below (2 columns - star rating and count):
 
-+-------+--------------+
-| stars | review_count |
-+-------+--------------+
-|   1.5 |           10 |
-|   2.5 |            6 |
-|   3.5 |           88 |
-|   4.0 |           21 |
-|   4.5 |           31 |
-|   5.0 |            3 |
-+-------+--------------+
++-------+--------+
+| stars | Counts |
++-------+--------+
+|   1.5 |      1 |
+|   2.5 |      2 |
+|   3.5 |      3 |
+|   4.0 |      2 |
+|   4.5 |      1 |
+|   5.0 |      1 |
++-------+--------+
 
 ii. Beachwood
 
 SQL code used to arrive at answer:
 
-SELECT stars, sum(review_count) review_count 
+SELECT stars, COUNT(review_count) review_count 
 from business
 Where city = 'Beachwood'
 Group By stars
 
 Copy and Paste the Resulting Table Below (2 columns - star rating and count):
 		
-+-------+--------------+
-| stars | review_count |
-+-------+--------------+
-|   2.0 |            8 |
-|   2.5 |            3 |
-|   3.0 |           11 |
-|   3.5 |            6 |
-|   4.0 |           69 |
-|   4.5 |           17 |
-|   5.0 |           23 |
-+-------+--------------+
++-------+--------+
+| stars | Counts |
++-------+--------+
+|   2.0 |      1 |
+|   2.5 |      1 |
+|   3.0 |      2 |
+|   3.5 |      2 |
+|   4.0 |      1 |
+|   4.5 |      2 |
+|   5.0 |      5 |
++-------+--------+
 
 7. Find the top 3 users based on their total number of reviews:
 		
