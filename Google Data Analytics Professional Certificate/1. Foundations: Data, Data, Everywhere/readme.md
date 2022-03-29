@@ -25,6 +25,7 @@ Learning Objectives
 •	  Describe the key concepts to be discussed in the program, including learning outcomes
 
 
+
 About 8 courses:
 
 1. Foundations: Data, Data, Everywhere
